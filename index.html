@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To Do List</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap" rel="stylesheet">
+  <link rel="reset" href="reset.css" />
+  <link href="styles/style.css" type="text/css" rel="stylesheet" />
+</head>
+
+<body>
+  <main>  
+    <div class="profile">
+      <div id="day"></div>
+        <h1>Bienvenido,</h1>
+    </div>
+  <section class="crud">
+    
+    <article>
+      <h4 class="crud-title">vamos a revisar y crear nuevas tareas</h4>
+      <form class="crud-form">
+        <input type="text" name="nameData" placeholder="nombre" required>
+        <br>
+        <input type="text" name="descriptionData" placeholder="descripción" required>
+        <br>
+        <button type="submit" style="background: none; border: none;">
+          <button class="send-outline"><p class="send">Enviar</p></button>
+        </button>
+        
+        <input type="hidden" name="id">
+      </form>
+    </article>
+    <article>
+      <h2>Tareas:</h2>
+      <table class="crud-table">
+        <tbody></tbody>
+      </table>
+    </article>
+  </section>
+
+  <template id="crud-template">
+    <tr data-id="">
+      <td class="combined-cell" colspan="3">
+        <div class="content-table">
+          <div class="container">
+            
+              <input type="checkbox" class="task-done">
+            
+          </div>
+          <div class="name"></div>
+          <div class="description"></div>
+          <div class="actions">
+
+            <img src="/assets/editar.png" class="edit" width="30px" height="30px">
+            <img src="/assets/basura.png" class="delete" width="30px" height="30px">  
+            
+          </div>
+        </div>
+      </td>
+    </tr>
+  </template>
+  
+
+ 
+</main>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="axios.js"></script>
+  <script src="index.js"></script>
+  <script src="server.js"></script>
+</body>
+
+</html>
