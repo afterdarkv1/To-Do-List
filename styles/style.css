@@ -1,0 +1,137 @@
+:root {
+  --blanco: white;
+  --azul-verdoso-medio: #446561;
+  --azul-verdoso-claro: #4D7E78;
+  --boton: #00AA44;
+}
+
+* {
+  font-family: "Titillium Web", sans-serif;
+  font-size: 1em;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  justify-content: center;
+  text-align: center;
+  align-content: center;
+  background-image: radial-gradient(circle at -11.24% 14.64%, #65807c 0, #496f6c 25%, #1f5959 50%, #004448 75%, #00333d 100%);
+  color: var(--blanco);
+  font-weight: 700;
+}
+
+.crud {
+  grid-row: 2/5;
+  height: 100%;
+  width: 42vh;
+  display: grid;
+  background-color: var(--azul-verdoso-claro);
+  padding: 1em;
+  border-radius: 3vh;
+  border: 1px solid var(--blanco);
+}
+
+.crud-article {
+  justify-self: center;
+}
+.crud-form {
+  display: flex;
+  gap: 0.3em;
+}
+.input-name {
+  width: 10vh;
+  height: 4vh;
+}
+
+.input-description {
+  width: 14vh;
+  height: 4vh;
+}
+
+.send-outline {
+  margin-top: 3px;
+  display: flex;
+  width: 3em;
+  height: 1.8em;
+  background-color: var(--boton);
+  color: white;
+  border-radius: 1vh;
+  border: none;
+  align-items: center;
+  justify-content: center;
+}
+
+.send {
+  font-weight: 700;
+}
+
+
+
+
+
+.content-table {
+  width: 37vh;
+  display: grid;
+  grid-template-columns: 3vh 5vh 14vh 9vh;
+  align-items: center;
+  gap: 1em;
+  background-color: var(--azul-verdoso-medio);
+  border-radius: 0.5em;
+  padding-top: 0.5em;
+  padding-bottom: 0.3em;
+  margin-bottom: 0.4em;
+  border: 1px solid white;
+  opacity: 0.8;
+}
+
+.actions {
+  display: flex;
+  gap: 10px;
+}
+
+.task-done {
+  height: 0.8em;
+  width: 0.8em;
+  font-size: 1.4em;
+  margin-top: 4px;
+  border: none;
+  margin-left: 1vh;
+}
+
+.edit {
+  width: 3.4vh;
+  height: 3.4vh;
+}
+
+
+@media screen and (min-width: 720px) { 
+
+  .crud {
+    height: 100%;
+    width: 100vh;
+  }
+  .input-name {
+    width: 20vh;
+    height: 6vh;
+  }
+  
+  .input-description {
+    width: 44vh;
+    height: 6vh;
+  }
+  
+  .send-outline {
+    width: 3.4em;
+    height: 2.2em;
+  }
+  
+  .content-table {
+    width: 94vh;
+    grid-template-columns: 3vh 20vh 52vh 9vh; 
+  }
+}

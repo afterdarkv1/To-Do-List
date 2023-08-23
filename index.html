@@ -13,19 +13,19 @@
 </head>
 
 <body>
-  <main>  
-    <div class="profile">
-      <div id="day"></div>
-        <h1>Bienvenido,</h1>
-    </div>
+  <main>   
+        <h1>BIENVENIDO</h1>
+        <br>
+
   <section class="crud">
     
-    <article>
-      <h4 class="crud-title">vamos a revisar y crear nuevas tareas</h4>
+    <article class="crud-article">
+      <h4 class="crud-title">Vamos a revisar y crear nuevas tareas</h4>
+      <br>
       <form class="crud-form">
-        <input type="text" name="nameData" placeholder="nombre" required>
+        <input type="text" name="nameData" placeholder="nombre" class="input-name" required>
         <br>
-        <input type="text" name="descriptionData" placeholder="descripción" required>
+        <input type="text" name="descriptionData" placeholder="descripción" class="input-description" required>
         <br>
           <button class="send-outline"><p class="send">Enviar</p></button>
         
@@ -33,7 +33,7 @@
       </form>
     </article>
     <article>
-      <h2>Tareas:</h2>
+  
       <table class="crud-table">
         <tbody></tbody>
       </table>
@@ -53,7 +53,7 @@
           <div class="description"></div>
           <div class="actions">
 
-            <img src="/assets/editar.png" class="edit" width="30px" height="30px">
+            <img src="/assets/editar.png" class="edit">
             <img src="/assets/basura.png" class="delete" width="30px" height="30px">  
             
           </div>
@@ -67,7 +67,7 @@
 </main>
   <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
   <script src="axios.js"></script>
-  <script src="index.js"></script>
+
 </body>
 
 </html>
