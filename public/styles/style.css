@@ -93,6 +93,7 @@ body {
 }
 
 .actions {
+  
   display: flex;
   gap: 5px;
 }
@@ -103,7 +104,6 @@ body {
 }
 
 .delete {
-
   width: 3.4vh;
   height: 3.4vh;
 
