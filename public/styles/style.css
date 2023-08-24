@@ -40,10 +40,12 @@ body {
 .crud-article {
   justify-self: center;
 }
+
 .crud-form {
   display: flex;
   gap: 0.3em;
 }
+
 .input-name {
   width: 10vh;
   height: 4vh;
@@ -94,16 +96,17 @@ body {
   display: flex;
   gap: 5px;
 }
+
 .edit {
   width: 3.4vh;
   height: 3.4vh;
 }
 
 .delete {
-  
-    width: 3.4vh;
-    height: 3.4vh;
-  
+
+  width: 3.4vh;
+  height: 3.4vh;
+
 }
 
 .task-done {
@@ -117,21 +120,22 @@ body {
 
 
 
-@media screen and (min-width: 1040px) { 
+@media screen and (min-width: 1040px) {
   .crud {
     height: 100%;
     width: 100vh;
   }
+
   .input-name {
     width: 20vh;
     height: 6vh;
   }
-  
+
   .input-description {
     width: 44vh;
     height: 6vh;
   }
-  
+
   .send-outline {
     width: 8.4vh;
     height: 5vh;
@@ -140,10 +144,10 @@ body {
   .send {
     font-size: 1em;
   }
-  
+
   .content-table {
     width: 100%;
-    grid-template-columns: 3vh 20vh 52vh 9vh; 
+    grid-template-columns: 3vh 20vh 52vh 9vh;
   }
 }
 
@@ -153,6 +157,6 @@ body {
 
 
 .creation-date {
-width: 10em;
-height: 2em;
+  width: 10em;
+  height: 2em;
 }
