@@ -6,6 +6,7 @@ const $template = d.getElementById("crud-template").content;
 const $fragment = d.createDocumentFragment();
 
 const getAll = async () => {
+  
   try {
     let res = await axios.get("http://localhost:3000/task");
     let json = await res.data;
@@ -33,7 +34,26 @@ const getAll = async () => {
   }
 }
 
-d.addEventListener("DOMContentLoaded", getAll);
+
+d.addEventListener("DOMContentLoaded", () => {
+  getAll(); 
+  const $search = d.getElementById("search");
+
+  $search.addEventListener("input", () => {
+    const searchTerm = $search.value.toLowerCase();
+    const $taskRows = $table.querySelectorAll("tr");
+
+    $taskRows.forEach($taskRow => {
+      const taskName = $taskRow.querySelector(".name").textContent.toLowerCase();
+      if (taskName.includes(searchTerm)) {
+        $taskRow.style.display = "table-row";
+      } else {
+        $taskRow.style.display = "none";
+      }
+    });
+  });
+});
+
 
 d.addEventListener("submit", async e => {
   if (e.target === $form) {
@@ -50,7 +70,7 @@ d.addEventListener("submit", async e => {
           data: JSON.stringify({
             nameData: e.target.nameData.value,
             descriptionData: e.target.descriptionData.value,
-            taskDone: false // Set default task-done state
+            taskDone: false 
           })
         };
         let res = await axios("http://localhost:3000/task", options);

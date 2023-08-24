@@ -1,10 +1,22 @@
 {
   "task": [
     {
-      "nameData": "skaja",
+      "nameData": "figma",
       "descriptionData": "wachin",
-      "taskDone": true,
-      "id": 1
+      "taskDone": false,
+      "id": 2
+    },
+    {
+      "nameData": "figma ready",
+      "descriptionData": "wachin",
+      "taskDone": false,
+      "id": 4
+    },
+    {
+      "nameData": "pikachu",
+      "descriptionData": "hacer estructura de la version movil y version destop en 2 horas",
+      "taskDone": false,
+      "id": 5
     }
   ]
 }

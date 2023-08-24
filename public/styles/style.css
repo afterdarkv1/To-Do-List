@@ -146,3 +146,7 @@ body {
     grid-template-columns: 3vh 20vh 52vh 9vh; 
   }
 }
+
+.search {
+  margin-top: 1em;
+}
