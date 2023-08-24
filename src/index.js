@@ -19,7 +19,7 @@ const getAll = async () => {
       $taskRow.dataset.id = el.id;
       $clone.querySelector(".name").textContent = el.nameData;
       $clone.querySelector(".description").textContent = el.descriptionData;
-      $clone.querySelector(".task-done").checked = el.taskDone; // Set the checkbox state
+      $clone.querySelector(".task-done").checked = el.taskDone; 
       $clone.querySelector(".edit").dataset.id = el.id;
       $clone.querySelector(".edit").dataset.nameData = el.nameData;
       $clone.querySelector(".edit").dataset.descriptionData = el.descriptionData;
@@ -94,7 +94,7 @@ d.addEventListener("submit", async e => {
           data: JSON.stringify({
             nameData: e.target.nameData.value,
             descriptionData: e.target.descriptionData.value,
-            taskDone: false // Preserve the default task-done state
+            taskDone: false 
           })
         };
         let res = await axios(`http://localhost:3000/task/${e.target.id.value}`, options);
@@ -147,7 +147,7 @@ d.addEventListener("click", async e => {
 
     try {
       let options = {
-        method: "PATCH", // Use PATCH method for partial updates
+        method: "PATCH", 
         headers: {
           "Content-type": "application/json; charset=utf-8"
         },
@@ -158,7 +158,6 @@ d.addEventListener("click", async e => {
       let res = await axios(`http://localhost:3000/task/${taskId}`, options);
       let json = await res.data;
 
-      // No need to reload the page, just update the checkbox state in the table data
       let tableRow = $table.querySelector(`tr[data-id="${taskId}"]`);
       tableRow.querySelector(".task-done").checked = isChecked;
     } catch (err) {
