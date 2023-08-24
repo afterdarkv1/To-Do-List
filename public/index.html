@@ -24,6 +24,7 @@
       <br>
       <form class="crud-form">
         <input type="text" name="nameData" placeholder="nombre" class="input-name" required>
+        
         <br>
         <input type="text" name="descriptionData" placeholder="descripción" class="input-description" required>
         <br>
@@ -37,19 +38,21 @@
     <article>
   
       <table class="crud-table">
-        <tbody></tbody>
+        <tbody>
+
+        </tbody>
       </table>
     </article>
   </section>
-
+  
   <template id="crud-template">
     <tr data-id="">
       <td class="combined-cell" colspan="3">
         <div class="content-table">
           <div class="container">
             
-              <input type="checkbox" class="task-done">
-            
+              <input type="checkbox" class="task-done"
+              
           </div>
           <div class="name"></div>
           <div class="description"></div>
@@ -63,12 +66,12 @@
       </td>
     </tr>
   </template>
-  
 
- 
 </main>
   <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
   <script src="../src/index.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Sortable/1.14.0/Sortable.min.js"></script>
+
 
 
 </body>

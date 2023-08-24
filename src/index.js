@@ -15,6 +15,7 @@ const getAll = async () => {
       const $clone = d.importNode($template, true);
       const $taskRow = $clone.querySelector("tr");
 
+
       $taskRow.dataset.id = el.id;
       $clone.querySelector(".name").textContent = el.nameData;
       $clone.querySelector(".description").textContent = el.descriptionData;
@@ -166,4 +167,9 @@ d.addEventListener("click", async e => {
     }
   }
 });
+
+
+
+
+
 
