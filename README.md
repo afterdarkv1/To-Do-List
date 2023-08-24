@@ -1,11 +1,11 @@
 # To Do List
 
-| Color        | Hex       | Muestra          |
-| ------------ | --------- | ---------------- |
-| Blanco       | `#FFFFFF` | <span style="color:white; background-color:#FFFFFF;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> |
-| azul-verdoso-medio      | `#446561` | <span style="color:#446561; background-color:#446561;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> |
-| azul-verdoso-claro         | `#4D7E78` | <span style="color:#4D7E78; background-color:#4D7E78">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> |
-| Verde claro   | `#9DC2D7` | <span style="color:#00AA44; background-color:#00AA44;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> |
+| Color        | Hex       |
+| ------------ | --------- | 
+| Blanco       | `#FFFFFF` |
+| azul-verdoso-medio      | `#446561` |  |
+| azul-verdoso-claro         | `#4D7E78` |  |
+| Verde claro   | `#9DC2D7` |  |
 
 
 ## Setting
