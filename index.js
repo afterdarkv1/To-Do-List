@@ -180,5 +180,5 @@ d.addEventListener("click", async (e) => {
       let message = err.statusText || "Ocurrió un error";
       alert(`Error ${err.status}: ${message}`);
     }
-  }
+  } 
 });
