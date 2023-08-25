@@ -5,6 +5,12 @@
       "descriptionData": "descripcion",
       "taskDone": false,
       "id": 3
+    },
+    {
+      "nameData": "figma",
+      "descriptionData": "hacer estructura de la version movil",
+      "taskDone": false,
+      "id": 4
     }
   ]
 }
