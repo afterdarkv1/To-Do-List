@@ -19,13 +19,16 @@ Follow these steps to correctly configure the project:
 
 You can view the website design on Figma by clicking the following link: [Catch a coder on Figma] https://www.figma.com/file/1WbK3dM5ydakgPiJfjJ0PI/To-Do-List?type=design&node-id=0-1&mode=design&t=PL9lcpQBb8RS7H2o-0
 
-## File structure
 
 ## Website
 
 you will have to start the server with "npm run server" to see the backend
 
 https://to-do-list-4zw.pages.dev/
+
+## File structure
+
+
 
 <div> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/>
 <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40"/>
