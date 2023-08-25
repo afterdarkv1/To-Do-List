@@ -1,16 +1,10 @@
 {
   "task": [
     {
-      "nameData": "figma",
-      "descriptionData": "wachin",
+      "nameData": "pika",
+      "descriptionData": "descripcion",
       "taskDone": false,
       "id": 3
-    },
-    {
-      "nameData": "pikachu",
-      "descriptionData": "wachin",
-      "taskDone": false,
-      "id": 4
     }
   ]
 }
